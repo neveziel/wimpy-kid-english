@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
+<title>윔피키드 영어 한 문장</title>
+<meta name="description" content="Diary of a Wimpy Kid 1권 핵심 표현 81개 — 원어민 음성, 한국어 해석, 구동사 해설">
+<meta name="theme-color" content="#0f1419">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="윔피키드">
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icon-180.png">
+<link rel="icon" href="icon-180.png">
+<style>
+:root{
+  --bg:#0f1419; --bg2:#141b22; --card:#19212a; --card2:#1f2831;
+  --line:#2b3541; --txt:#e9eef4; --sub:#94a3b1; --sub2:#6f7d8b;
+  --acc:#ffc845; --accbg:rgba(255,200,69,.14); --ok:#4ade80; --okbg:rgba(74,222,128,.14);
+  --blue:#69b7ff;
+}
+@media (prefers-color-scheme: light){
+  :root{--bg:#f6f7f9;--bg2:#ffffff;--card:#ffffff;--card2:#f1f3f6;--line:#e2e6ec;--txt:#141a21;--sub:#5b6675;--sub2:#8a95a3;--acc:#c8880a;--accbg:rgba(200,136,10,.12);--ok:#128a4b;--okbg:rgba(18,138,75,.12);--blue:#0b6bcb}
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;padding:0;width:100%;max-width:100%;overflow-x:hidden;background:var(--bg);color:var(--txt);
+  font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Pretendard","Malgun Gothic",system-ui,sans-serif;
+  -webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{padding-bottom:calc(88px + env(safe-area-inset-bottom))}
+.wrap{max-width:430px;margin:0 auto;padding:0 14px;width:100%}
+header{padding:calc(14px + env(safe-area-inset-top)) 0 10px}
+h1{font-size:19px;line-height:1.3;margin:0 0 3px;letter-spacing:-.4px;word-break:keep-all}
+h1 .tag{font-size:11px;font-weight:600;color:var(--acc);background:var(--accbg);border-radius:6px;padding:2px 6px;vertical-align:2px;margin-left:4px}
+.sub{margin:0 0 9px;font-size:11.5px;color:var(--sub);line-height:1.5}
+.sub b{color:var(--txt);font-weight:600}
+.prog{height:5px;border-radius:3px;background:var(--card2);overflow:hidden;margin:0 0 11px}
+.prog i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--acc),#ffab00);border-radius:3px;transition:width .25s}
+input[type=search]{-webkit-appearance:none;appearance:none;width:100%;height:40px;padding:0 12px;font-size:14px;color:var(--txt);
+  background:var(--card);border:1px solid var(--line);border-radius:11px;outline:none;font-family:inherit}
+input[type=search]::placeholder{color:var(--sub2)}
+input[type=search]:focus{border-color:var(--acc)}
+.parts{display:flex;gap:6px;overflow-x:auto;padding:10px 0 4px;margin:0 -14px;padding-left:14px;padding-right:14px;
+  -webkit-overflow-scrolling:touch;scrollbar-width:none}
+.parts::-webkit-scrollbar{display:none}
+.pbtn{flex:0 0 auto;height:32px;padding:0 11px;border-radius:9px;border:1px solid var(--line);background:var(--card);
+  color:var(--sub);font-size:12.5px;font-weight:600;font-family:inherit;white-space:nowrap}
+.pbtn.on{background:var(--acc);border-color:var(--acc);color:#1a1200}
+.ctl{display:flex;align-items:center;gap:8px;padding:8px 0 4px;flex-wrap:wrap}
+.pill{height:34px;padding:0 11px;border-radius:9px;border:1px solid var(--line);background:var(--card);color:var(--sub);
+  font-size:12.5px;font-weight:700;font-family:inherit;white-space:nowrap}
+.pill.on{color:var(--acc);border-color:var(--acc);background:var(--accbg)}
+.speed{display:flex;border:1px solid var(--line);border-radius:9px;overflow:hidden;background:var(--card);margin-left:auto}.speed button{height:32px;min-width:44px;padding:0 8px;border:0;background:transparent;color:var(--sub);font-size:12.5px;font-weight:700;font-family:inherit}
+.speed button.on{background:var(--acc);color:#1a1200}
+.legend{font-size:11px;color:var(--sub2);padding:2px 0 8px}
+.linerow{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:2px 0 8px}
+.linerow .legend{padding:0}
+.linerow .speed{margin-left:0}
+main{padding-top:2px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:13px 13px 11px;margin:0 0 10px;
+  transition:border-color .2s,box-shadow .2s,opacity .2s}
+.card.playing{border-color:var(--acc);box-shadow:0 0 0 2px var(--accbg)}
+.card.done{opacity:.62}
+.chead{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:7px}
+.num{font-size:11px;font-weight:800;color:var(--sub2);letter-spacing:.5px}
+.num.part{color:var(--acc)}
+.chk{width:28px;height:28px;border-radius:50%;border:1.5px solid var(--line);background:transparent;color:transparent;
+  font-size:14px;line-height:1;font-family:inherit;padding:0;display:flex;align-items:center;justify-content:center}
+.chk.on{background:var(--okbg);border-color:var(--ok);color:var(--ok)}
+.en{margin:0;font-size:16.5px;line-height:1.52;font-weight:600;letter-spacing:-.1px;color:var(--txt);
+  overflow-wrap:break-word;word-break:normal}
+.en mark{background:var(--accbg);color:inherit;border-radius:3px;padding:0 1px}
+.ko{margin:7px 0 0;font-size:14px;line-height:1.6;color:var(--sub);overflow-wrap:break-word;word-break:keep-all}
+body.ko-off .ko{display:none}
+body.ko-off .card.ko-open .ko{display:block}
+.card.ko-hide .ko{display:none!important}
+.chips{display:flex;flex-wrap:wrap;gap:5px;margin:9px 0 0}
+.chip{font-size:11.5px;font-weight:600;color:var(--blue);background:rgba(105,183,255,.1);border:1px solid rgba(105,183,255,.25);
+  border-radius:7px;padding:4px 7px;font-family:inherit;max-width:100%;overflow-wrap:break-word;text-align:left}
+.actions{display:flex;gap:6px;margin:10px 0 0}
+.btn{flex:1 1 0;height:36px;border-radius:9px;border:1px solid var(--line);background:var(--card2);color:var(--txt);
+  font-size:12.5px;font-weight:700;font-family:inherit;display:flex;align-items:center;justify-content:center;gap:4px;padding:0 6px}
+.btn.play{background:var(--accbg);border-color:rgba(255,200,69,.4);color:var(--acc)}
+.btn.on{border-color:var(--acc);color:var(--acc)}
+.detail{display:none;margin:10px 0 0;padding-top:10px;border-top:1px dashed var(--line)}
+.card.open .detail{display:block}
+.tip{margin:0 0 9px;font-size:13px;line-height:1.68;color:var(--txt);overflow-wrap:break-word;word-break:keep-all}
+.words{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+.words li{font-size:12.5px;line-height:1.5;color:var(--sub);display:flex;gap:7px;align-items:baseline}
+.words b{color:var(--blue);font-weight:700;flex:0 0 auto;max-width:58%;overflow-wrap:break-word}
+.words span{color:var(--sub)}
+.empty{text-align:center;color:var(--sub2);font-size:13px;padding:40px 0}
+.bar{position:fixed;left:0;right:0;bottom:0;z-index:20;background:rgba(15,20,25,.94);border-top:1px solid var(--line);
+  padding:8px 12px calc(8px + env(safe-area-inset-bottom));backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
+@media (prefers-color-scheme: light){.bar{background:rgba(255,255,255,.95)}}
+.bar .inner{max-width:430px;margin:0 auto;display:flex;align-items:center;gap:8px}
+.now{flex:1 1 auto;min-width:0}
+.now .lbl{font-size:11px;color:var(--sub);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;display:block;margin-bottom:4px}
+.now .lbl b{color:var(--txt);font-weight:700}
+.abar{height:3px;border-radius:2px;background:var(--card2);overflow:hidden}
+.abar i{display:block;height:100%;width:0;background:var(--acc)}
+.barbtn{width:40px;height:40px;flex:0 0 auto;border-radius:50%;border:1px solid var(--line);background:var(--card);color:var(--txt);
+  font-size:15px;display:flex;align-items:center;justify-content:center;padding:0;font-family:inherit}
+.barbtn.main{background:var(--acc);border-color:var(--acc);color:#1a1200;width:44px;height:44px;font-size:17px}
+.barbtn:disabled{opacity:.4}
+.toast{position:fixed;left:50%;bottom:calc(100px + env(safe-area-inset-bottom));transform:translateX(-50%);z-index:30;
+  background:var(--card2);border:1px solid var(--line);color:var(--txt);font-size:12.5px;padding:9px 14px;border-radius:10px;
+  opacity:0;pointer-events:none;transition:opacity .2s;max-width:88vw;text-align:center;box-shadow:0 6px 20px rgba(0,0,0,.35)}
+.toast.show{opacity:1}
+footer{padding:18px 0 10px;font-size:10.5px;line-height:1.6;color:var(--sub2);text-align:center}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>윔피키드 영어 한 문장<span class="tag">1권</span></h1>
+    <p class="sub">원어민 음성 · 자연스러운 해석 · 구동사 해설 &nbsp;|&nbsp; <b id="stat">0 / 81 완료</b></p>
+    <div class="prog"><i id="doneFill"></i></div>
+    <input id="q" type="search" placeholder="🔍 영어 · 한국어 · 표현 검색" autocomplete="off" autocorrect="off" spellcheck="false">
+    <div class="parts" id="parts"></div>
+    <div class="ctl">
+      <button id="koAll" class="pill on">🇰🇷 한글 해석 ON</button>
+      <button id="btnCont" class="pill">▶ 전체 연속 듣기</button>
+    </div>
+    <div class="linerow">
+      <span class="legend" id="legend"></span>
+      <div class="speed" id="speed" role="group" aria-label="재생 속도">
+        <button data-r="0.8">0.8x</button><button data-r="1" class="on">1.0x</button><button data-r="1.2">1.2x</button>
+      </div>
+    </div>
+    <div class="legend" id="legend"></div>
+  </header>
+  <main id="list"></main>
+  <footer>Diary of a Wimpy Kid 1권 학습용 발췌 · 문장 저작권은 Jeff Kinney / Amulet Books에 있습니다.<br>개인 학습 목적의 요약·해설이며, 원서를 대신하지 않습니다.</footer>
+</div>
+
+<div class="bar">
+  <div class="inner">
+    <button class="barbtn" id="btnPrev" aria-label="이전 문장">⏮</button>
+    <button class="barbtn main" id="btnPlay" aria-label="재생/일시정지">▶</button>
+    <button class="barbtn" id="btnNext" aria-label="다음 문장">⏭</button>
+    <div class="now">
+      <span class="lbl" id="nowLbl">연속 듣기를 시작해 보세요</span>
+      <div class="abar"><i id="afill"></i></div>
+    </div>
+  </div>
+</div>
+<div class="toast" id="toast"></div>
+<audio id="au" preload="metadata"></audio>
+
+<script>
+const DATA = [{"id":1,"part":1,"en":"First of all, let me get something straight: This is a JOURNAL, not a diary.","ko":"우선, 오해 없는 게 좋겠는데. 이건 일기가 아니라 기록장이야.","tip":"get something straight는 '엄한 오해가 없도록 분명히 짚고 넘어가다'. 대화를 시작하면서 상대가 잘못 알고 있는 걸 바로잡을 때 앞에 붙입니다.","words":[["get something straight","오해를 바로잡고 분명히 하다"],["first of all","우선, 무엇보다"]]},{"id":2,"part":1,"en":"The other thing I want to clear up right away is that this was Mom's idea, not mine.","ko":"그리고 당장 짚고 싶은 건, 이건 엄마가 시킨 거지 내가 먼저 하겠다고 한 게 아니라는 것.","tip":"clear up은 '흐릿한 걸 맑게 정리하다'에서 '오해를 풀어 설명하다'. right away는 '바로, 당장'. not mine은 '내 것(내가 한 일)이 아니다'.","words":[["clear up","오해를 풀다, 분명히 하다"],["right away","즉시, 바로"],["not mine","내 것이 아니다"]]},{"id":3,"part":1,"en":"All I need is for some jerk to catch me carrying this book around and get the wrong idea.","ko":"이 책 들고 다니다가 어느 얼간이한테 딱 걸려서 괜한 오해나 사면 그걸로 끝이지.","tip":"All I need is ~는 직역하면 '내게 필요한 건 ~뿐'이지만 여기선 '이제 딱 하나만 더 나쁘면 된다'는 반어. get the wrong idea는 '괜히 잘못 짚다, 오해하다'.","words":[["jerk","얼간이, 멍청이"],["get the wrong idea","오해하다"],["carry around","들고 다니다"]]},{"id":4,"part":1,"en":"So just don't expect me to be all \"Dear Diary\" this and \"Dear Diary\" that.","ko":"그러니까 '친애하는 일기야~' 어쩌고 하는 건 기대도 마.","tip":"be all ~ this and ~ that은 '~라고 ~라고 하면서' 흉내 내는 구어체. expect someone to be ~는 '~가 ~일 거라 기대하다'.","words":[["expect","기대하다"],["this and that","이것저것, ~니 뭐니"]]},{"id":5,"part":1,"en":"The only reason I agreed to do this at all is because I figure later on when I'm rich and famous, I'll have better things to do than answer people's stupid questions all day long.","ko":"내가 이걸 하기로 한 건 딱 하나 때문이야. 나중에 돈도 벌고 유명해지면, 하루 종일 사람들 한심한 질문이나 받아주는 것보다 할 일이 많을 테니까.","tip":"figure는 회화체에서 '~라고 짐작하다, 생각하다'. have better things to do than ~는 '~하는 것보다 나을 일이 있다'로, 부탁을 완곡하게 거절할 때도 씁니다.","words":[["figure","~라고 생각하다, 짐작하다"],["later on","나중에"],["all day long","하루 종일"],["come in handy","요긴하게 쓰이다"]]},{"id":6,"part":1,"en":"So this book is gonna come in handy.","ko":"그러니까 이 책은 나중에 요긴하게 쓰일 거야.","tip":"come in handy는 '필요할 때 딱 쓸모가 있다'. gonna는 going to의 구어 축약으로, 이 책 전체가 그레그의 말투로 흘러갑니다.","words":[["come in handy","쓸모가 있다, 도움이 되다"],["gonna","going to의 구어체"]]},{"id":7,"part":1,"en":"Like I said, I'll be famous one day, but for now I'm stuck in middle school with a bunch of morons.","ko":"내가 말했듯이 난 언젠가 유명해질 거야. 근데 지금은 얼간이들 틈에 끼어 중학교에 갇혀 있지.","tip":"be stuck in ~은 '~에 갇혀 있다, 빠져나올 수 없다'. 답답한 처지를 푸념할 때 자주 씁니다.","words":[["be stuck in","~에 갇혀 있다"],["a bunch of","한 무리의, 많은"],["moron","얼간이, 멍청이"]]},{"id":8,"part":1,"en":"Let me just say for the record that I think middle school is the dumbest idea ever invented.","ko":"공식적으로 한마디 해두자면, 중학교라는 건 지금까지 만들어진 것 중 제일 멍청한 발명이야.","tip":"for the record는 '기록에 남긴다는 말로, 분명히 밝혀 두고 하는 말인데'. 말머리에 붙여 '공식적으로 한마디 하자면'의 느낌을 냅니다.","words":[["for the record","공식적으로 밝혀 두자면"],["ever invented","지금까지 발명된 중 최고로"]]},{"id":9,"part":1,"en":"You got kids like me who haven't hit their growth spurt yet mixed in with these gorillas who need to shave twice a day.","ko":"나처럼 아직 성장기가 안 온 애들이, 하루에 두 번씩 면도를 해야 하는 덩치들 사이에 섞여 있는 거야.","tip":"hit one's growth spurt는 '성장 급등기를 맞다'. mixed in with ~는 '~와 뒤섞여'. gorillas는 덩치 큰 아이들을 고릴라에 빗댄 놀림입니다.","words":[["hit one's growth spurt","성장 급등기를 맞다"],["mixed in with","~와 뒤섞여"],["shave","면도하다"]]},{"id":10,"part":1,"en":"And then they wonder why bullying is such a big problem in middle school.","ko":"그러고는 중학교에서 왜 괴롭힘이 큰 문제인지 궁금해하더라.","tip":"wonder why ~는 '왜 ~인지 궁금하다'. 앞 문장에 대한 비꼼으로, '원인이 뻔하지 않냐'는 뉘앙스가 담깁니다.","words":[["wonder","궁금해하다"],["bullying","괴롭힘, 왕따"]]},{"id":11,"part":1,"en":"Today is the first day of school, and right now we're just waiting around for the teacher to hurry up and finish the seating chart.","ko":"오늘은 개학 첫날이고, 지금 우리는 선생님이 빨리 자리를 다 정해 주기만 기다리는 중이야.","tip":"wait around은 '(별로 할 일 없이) 어정쩡하게 기다리다'. hurry up and ~는 '빨리 ~해 주다'.","words":[["wait around","빈둥거리며 기다리다"],["hurry up","서두르다"],["seating chart","자리 배치표"]]},{"id":12,"part":1,"en":"So I figured I might as well write in this book to pass the time.","ko":"그래서 심심한 김에 이 책에나 끄적이는 게 낫겠다 싶었어.","tip":"might as well은 '다른 좋은 대안이 없으니 차라리 ~하는 편이 낫다'. pass the time은 '시간을 때우다'.","words":[["might as well","차라리 ~하는 게 낫다"],["pass the time","시간을 때우다"]]},{"id":13,"part":2,"en":"You walk into the classroom and just plunk your stuff down on any old desk, and the next thing you know the teacher is saying...","ko":"교실에 들어가서 아무 책상에나 가방을 툭 던져놓으면, 그다음 순간엔 선생님이 이렇게 말해.","tip":"plunk something down은 '쿵, 툭 하고 아무렇게나 내려놓다'. the next thing you know는 '그다음 순간엔 이미 ~하고 있다'.","words":[["plunk down","툭 내려놓다"],["any old desk","아무 책상이나"],["the next thing you know","그다음 순간엔"]]},{"id":14,"part":2,"en":"\"I hope you all like where you're sitting, because these are your permanent seats.\"","ko":"\"다들 지금 앉은 자리가 마음에 들었으면 좋겠구나. 여기가 올해 너희 자리니까.\"","tip":"permanent는 '고정된, 영구적인'. 첫날 아무 데나 앉았다가 한 해를 그 자리에서 버텨야 하는 미국 학교의 디테일입니다.","words":[["permanent","영구적인, 고정된"],["seat","자리, 좌석"]]},{"id":15,"part":2,"en":"So in this class, I got stuck with Chris Hosey in front of me and Lionel James in back of me.","ko":"그래서 이 반에서는 앞에는 크리스 호시, 뒤에는 라이오넬 제임스가 자리 잡는 신세가 됐어.","tip":"get stuck with ~는 '(원하지 않았는데) ~를 떠맡다, ~와 엮이다'. in back of는 미국식 구어로 behind와 같습니다.","words":[["get stuck with","~를 떠맡다, 엮이다"],["in back of","~뒤에"]]},{"id":16,"part":2,"en":"Man, I don't know what is up with girls these days.","ko":"참, 요즘 여자애들은 왜 저러는지 모르겠어.","tip":"what is up with ~는 '~는 왜 저래, ~에 무슨 일이야'. Man은 문장 앞에 붙이는 감탄사로 '참, 이거' 정도.","words":[["what is up with","~는 왜 저래"],["these days","요즘"]]},{"id":17,"part":2,"en":"It used to be a whole lot simpler back in elementary school.","ko":"초등학교 때는 훨씬 단순했는데.","tip":"used to ~는 '예전에는 ~였다'. a whole lot은 비교급을 강하게 만드는 말로 '훨씬 더'.","words":[["used to","예전에는 ~였다"],["a whole lot","훨씬, 아주 많이"]]},{"id":18,"part":2,"en":"And kids like Ronnie McCoy are scratching their heads wondering what the heck happened.","ko":"그래서 로니 맥코이 같은 애들은 대체 무슨 일이 일어난 건지 머리를 긁적이고 있어.","tip":"scratch one's head는 '머리를 긁적이다'로, 이해가 안 돼 어리둥절할 때. what the heck은 what the hell의 순화형입니다.","words":[["scratch one's head","머리를 긁적이다, 어리둥절하다"],["what the heck","대체 뭐가"]]},{"id":19,"part":2,"en":"But of course now I don't get any credit for sticking with the girls all this time.","ko":"그런데 이제 와서, 그동안 죽 여자애들 편에 서 있은 걸 아무도 알아주지 않아.","tip":"get credit for ~는 '~한 것을 인정받다'. stick with ~는 '~곁에 머물다, 계속 함께 가다'.","words":[["get credit for","~을 인정받다"],["stick with","곁에 머물다, 계속하다"],["all this time","그동안 죽"]]},{"id":20,"part":2,"en":"So that leaves all the rest of us guys scrambling for the other spots.","ko":"그러니 나머지 애들은 남은 자리를 두고 앞다투어 난리인 거지.","tip":"scramble for ~는 '~을 잡으려고 앞다투다'. 학년 인기 순위를 매기는 그레그의 장면을 대표하는 동사입니다.","words":[["scramble for","~을 두고 앞다투다"],["the rest of us","나머지 우리들"]]},{"id":21,"part":2,"en":"I try to explain all this popularity stuff to my friend Rowley, but I think it just goes in one ear and out the other with him.","ko":"이 인기 어쩌고 하는 걸 친구 로울리한테 설명해 주긴 하는데, 걔한텐 한 귀로 듣고 한 귀로 흘러나가는 것 같아.","tip":"go in one ear and out the other는 '한 귀로 듣고 한 귀로 흘리다'. with him을 뒤에 붙여 '걔한테는'을 강조합니다.","words":[["go in one ear and out the other","한 귀로 듣고 한 귀로 흘리다"],["popularity","인기"]]},{"id":22,"part":2,"en":"I was pretty disappointed to find out I got put in the Gifted group, because that just means a lot of extra work.","ko":"난 영재반에 배정됐다는 걸 알고 꽤 실망했어. 그건 그냥 일이 더 많아진다는 뜻이니까.","tip":"be put in ~은 '~반에 배정되다'. find out은 '알게 되다'. 미국 학교의 reading group 편성 장면입니다.","words":[["be put in","~에 배정되다"],["find out","알게 되다"],["extra work","추가 업무, 일이 더 많음"]]},{"id":23,"part":2,"en":"Mom is always saying I'm a smart kid, but that I just don't apply myself.","ko":"엄마는 늘 내가 똑똑하긴 한데 공부에 제대로 안 집중한다고 그래.","tip":"apply oneself는 '전념하다, 열심히 하다'. 부모가 '머리는 좋은데 노력을 안 한다'고 할 때 쓰는 정형 표현입니다.","words":[["apply oneself","전념하다, 열심히 하다"],["smart kid","똑똑한 아이"]]},{"id":24,"part":2,"en":"But if there's one thing I learned from Rodrick, it's to set people's expectations real low so you end up surprising them by practically doing nothing at all.","ko":"그래도 형한테 배운 게 하나 있다면, 사람들 기대치를 아주 낮춰 놓는 거야. 그러면 거의 아무것도 안 해도 다들 놀라니까.","tip":"set expectations low는 '기대를 낮춰 두다'. end up ~ing는 '결국 ~하게 되다'. practically는 '거의, 사실상'.","words":[["set expectations low","기대치를 낮추다"],["end up ~ing","결국 ~하게 되다"],["practically","거의, 사실상"]]},{"id":25,"part":3,"en":"Rowley is technically my best friend, but that is definitely subject to change.","ko":"로울리는 엄밀히 말하면 내 가장 친한 친구야. 물론 언제든 바뀔 수 있지만.","tip":"technically는 '따지고 보면, 엄밀히는'. be subject to change는 '바뀔 수 있다, 유동적이다'로 계약서나 일정 안내에서도 자주 보는 표현입니다.","words":[["technically","엄밀히 말하면"],["be subject to change","바뀔 수 있다"]]},{"id":26,"part":3,"en":"I've been avoiding Rowley since the first day of school, when he did something that really annoyed me.","ko":"개학 첫날 로울리가 나를 진짜 짜증 나게 한 뒤로 계속 피해 왔어.","tip":"have been ~ing는 '지금까지 계속 ~해 왔다'. annoy는 '짜증나게 하다'로 irritate보다 일상적인 말입니다.","words":[["avoid","피하다"],["annoy","짜증나게 하다"]]},{"id":27,"part":3,"en":"I have told Rowley at least a billion times that now that we're in middle school, you're supposed to say \"hang out,\" not \"play.\"","ko":"중학생이 됐으니까 이제는 'play'가 아니라 'hang out'이라고 해야 한다고, 로울리한테 백만 번은 말했어.","tip":"hang out은 '어울려 놀다, 시간을 보내다'. play는 아이들 놀이 느낌이라 중학생이 쓰면 유치해 보입니다. now that은 '이제 ~이니까'.","words":[["hang out","어울려 놀다, 시간을 보내다"],["now that","이제 ~이니까"],["be supposed to","~해야 한다"]]},{"id":28,"part":3,"en":"But no matter how many noogies I give him, he always forgets the next time.","ko":"그런데 아무리 머리를 꿀밤 때려도 걔는 다음엔 또 잊어버려.","tip":"noogie는 주먹을 쥐고 머리를 비비는 장난. no matter how ~는 '아무리 ~해도'.","words":[["noogie","머리를 비비는 장난, 꿀밤"],["no matter how","아무리 ~해도"]]},{"id":29,"part":3,"en":"I've been trying to be a lot more careful about my image ever since I got to middle school. But having Rowley around is definitely not helping.","ko":"중학교에 온 뒤로 이미지 관리에 꽤 신경 쓰고 있는데, 로울리가 옆에 있는 건 확실히 도움이 안 돼.","tip":"be careful about ~는 '~에 신경 쓰다'. ever since는 '~한 이후로 쭉'. not helping은 '오히려 방해가 된다'는 뜻으로도 쓰입니다.","words":[["be careful about","~에 신경 쓰다"],["ever since","~한 이후로 쭉"],["not helping","도움이 안 되다"]]},{"id":30,"part":3,"en":"I guess I kind of felt sorry for Rowley, and I decided to take him under my wing.","ko":"로울리가 좀 안쓰러웠던 것 같아. 그래서 내가 챙겨 주기로 했지.","tip":"feel sorry for ~는 '~가 안됐다고 느끼다'. take someone under one's wing은 '~를 품어 지도하다, 챙겨 주다'.","words":[["feel sorry for","~가 안쓰럽다"],["take under one's wing","품어서 챙기다"]]},{"id":31,"part":4,"en":"Today we had Phys Ed, so the first thing I did when I got outside was sneak off to the basketball court to see if the Cheese was still there. And sure enough, it was.","ko":"오늘은 체육 시간이라, 밖에 나가자마자 제일 먼저 한 일이 몰래 농구장으로 가서 치즈가 아직 있는지 보는 거였어. 그리고 아니나 다를까, 그대로 있더라.","tip":"sneak off to ~는 '슬그머니 ~로 가다'. sure enough는 '아니나 다를까, 역시'로 예상이 맞았을 때 던지는 말입니다.","words":[["sneak off to","슬그머니 ~로 가다"],["sure enough","아니나 다를까"],["Phys Ed","체육(Physical Education)"]]},{"id":32,"part":4,"en":"I guess it must have dropped out of someone's sandwich or something.","ko":"누가 먹던 샌드위치에서 떨어진 게 틀림없어.","tip":"must have + 과거분사는 '~였음에 틀림없다'로 과거 사실에 대한 강한 추측. or something은 '~나 그런 것'.","words":[["must have p.p.","~였음에 틀림없다"],["drop out of","~에서 떨어지다"],["or something","~나 그런 것"]]},{"id":33,"part":4,"en":"Nobody would play basketball on the court where the Cheese was, even though that was the only court that had a hoop with a net.","ko":"치즈가 있는 코트에서 아무도 농구를 안 했어. 그게 그물 달린 골대가 있는 유일한 코트였는데도.","tip":"Nobody + 긍정문 형태 — 영어는 부정어를 한 번만 씁니다('아무도 ~하지 않았다'를 Nobody would not으로 쓰면 이중 부정). even though는 '비록 ~인데도'.","words":[["even though","비록 ~인데도"],["hoop","골대, 림"],["court","코트, 운동장"]]},{"id":34,"part":4,"en":"Then one day, this kid named Darren Walsh touched the Cheese with his finger, and that's what started this thing called the Cheese Touch.","ko":"그러던 어느 날 대런 월시라는 애가 손가락으로 그 치즈를 만졌고, 그게 '치즈 터치'라는 게 시작된 계기야.","tip":"this + 이름은 '여기 ~라는 애'처럼 말하는 사람 쪽으로 끌어오는 느낌. that's what ~은 '그게 바로 ~한 것이다'.","words":[["this + 이름","여기 ~라는"],["that's what","그게 바로 ~한 것"]]},{"id":35,"part":4,"en":"If you get the Cheese Touch, you're stuck with it until you pass it on to someone else.","ko":"치즈 터치에 걸리면, 다른 애한테 넘겨줄 때까지 계속 안고 가야 해.","tip":"be stuck with ~는 '~을 떠안고 있다, 벗어날 수 없다'. pass it on은 '그것을 넘기다, 전달하다'.","words":[["be stuck with","~을 떠안고 있다"],["pass on","넘기다, 전달하다"]]},{"id":36,"part":4,"en":"The only way to protect yourself from the Cheese Touch is to cross your fingers.","ko":"치즈 터치로부터 나를 지키는 방법은 딱 하나, 손가락을 꼬고 있는 거야.","tip":"cross one's fingers는 '검지와 중지를 꼬다'. 행운을 빌 때(keep your fingers crossed) 쓰는 것과 같은 동작인데, 여기선 주문을 막는 방어법입니다.","words":[["cross one's fingers","손가락을 꼬다"],["protect A from B","A를 B로부터 지키다"]]},{"id":37,"part":4,"en":"I ended up taping mine together so they'd stay crossed all the time. I got a D in handwriting, but it was totally worth it.","ko":"결국 손가락을 테이프로 붙여서 계속 꼬인 상태로 있게 했어. 필기에서 D를 받았지만 그럴 만했지 뭐.","tip":"end up ~ing는 '결국 ~하고 말다'. be worth it은 '그럴 가치가 있다'. mine은 앞의 fingers를 받는 대명사.","words":[["end up ~ing","결국 ~하게 되다"],["be worth it","그럴 가치가 있다"],["handwriting","필기, 악필"]]},{"id":38,"part":4,"en":"This summer Abe moved away to California and took the Cheese Touch with him.","ko":"올여름에 에이브가 캘리포니아로 이사 가면서 치즈 터치도 같이 데려갔어.","tip":"move away to ~는 '~로 이사 가 버리다'. away가 '가버렸다'는 결말의 느낌을 더합니다.","words":[["move away","이사 가다, 떠나다"],["take A with B","A를 B와 함께 데려가다"]]},{"id":39,"part":4,"en":"I just hope someone doesn't start the Cheese Touch up again, because I don't need that kind of stress in my life anymore.","ko":"제발 누가 치즈 터치를 또 시작하지 않았으면 좋겠어. 내 인생에 그런 스트레스는 이제 필요 없거든.","tip":"start ~ up은 '갑자기 다시 시작하다'로, up이 붙으면 불쑥 시작되는 느낌. not ~ anymore는 '더 이상 ~않다'.","words":[["start up","다시 시작하다"],["not anymore","더 이상 ~않다"],["that kind of","그런 종류의"]]},{"id":40,"part":5,"en":"I'm having a seriously hard time getting used to the fact that summer is over and I have to get out of bed every morning to go to school.","ko":"여름이 끝났고 매일 아침 학교 가려고 침대에서 나와야 한다는 사실에 적응이 정말 안 돼.","tip":"have a hard time ~ing는 '~하는 게 힘들다'. get used to ~는 '~에 익숙해지다'로 to 뒤에는 명사나 동명사가 옵니다.","words":[["have a hard time ~ing","~하는 게 힘들다"],["get used to","~에 익숙해지다"],["be over","끝나다"]]},{"id":41,"part":5,"en":"My summer did not exactly get off to a great start, thanks to my older brother Rodrick.","ko":"내 여름방학은 시작부터 그닥 좋지 않았어. 다 내 형 로드릭 덕분이지.","tip":"get off to a good/bad start는 '좋은/나쁜 출발을 하다'. thanks to ~는 '~덕분에'인데, 여기선 반어적으로 쓰였습니다.","words":[["get off to a great start","좋게 시작하다"],["thanks to","~덕분에"],["not exactly","그닥 ~은 아닌"]]},{"id":42,"part":5,"en":"You might think I was pretty dumb for falling for that one, but Rodrick was dressed up in his school clothes.","ko":"내가 그런 데 넘어간 게 한심해 보일지 몰라. 근데 로드릭은 교복을 갖춰 입고 있었단 말이야.","tip":"fall for ~는 '(속임수에) 넘어가다'이며 '반하다'로도 쓰입니다. be dressed up in ~는 '~을 갖춰 입다'.","words":[["fall for","속아 넘어가다, 반하다"],["be dressed up in","~을 갖춰 입다"]]},{"id":43,"part":5,"en":"I must have made a pretty big racket because the next thing I knew, Dad was downstairs yelling at me for eating Cheerios at 3:00 in the morning.","ko":"내가 꽤 요란을 떨었나 봐. 정신 차려 보니 아빠가 내려와서 새벽 3시에 시리얼이나 먹는다고 나를 혼내고 있더라.","tip":"make a racket은 '요란한 소리를 내다'. the next thing I knew는 '정신을 차려 보니'.","words":[["make a racket","요란한 소리를 내다"],["yell at","~에게 소리치다"],["the next thing I knew","정신을 차려 보니"]]},{"id":44,"part":5,"en":"Dad walked down to the basement to chew Rodrick out, and I tagged along. I couldn't wait to see Rodrick get what was coming to him.","ko":"아빠가 로드릭을 혼내러 지하실로 내려갔고 나도 따라갔어. 형이 혼나는 꼴을 얼마나 보고 싶었는지 몰라.","tip":"chew someone out은 '호되게 야단치다'. tag along은 '(초대받지 않고) 따라가다'. get what's coming to you는 '마땅히 받을 벌을 받다'.","words":[["chew someone out","호되게 야단치다"],["tag along","따라가다"],["get what's coming to you","받을 벌을 받다"]]},{"id":45,"part":5,"en":"But Rodrick covered up his tracks pretty good. And to this day, I'm sure Dad thinks I've got a screw loose or something.","ko":"그런데 로드릭이 흔적을 아주 잘 지워 놨어. 지금까지도 아빠는 내 머리에 나사 하나 빠진 줄 아실 거야.","tip":"cover up one's tracks는 '자취를 감추다, 증거를 인멸하다'. have a screw loose는 '어딘가 좀 돌아 있다'.","words":[["cover up one's tracks","자취를 감추다"],["have a screw loose","어딘가 돌아 있다"],["to this day","지금까지도"]]},{"id":46,"part":5,"en":"Rodrick's band is really awful, and I can't stand being home when they're having rehearsals.","ko":"로드릭 밴드는 진짜 형편없어. 걔네가 연습할 때는 집에 있고 싶지가 않아.","tip":"can't stand ~는 '~을 도저히 견딜 수 없다'로 뒤에 명사나 동명사가 옵니다. have a rehearsal은 '연습하다'.","words":[["can't stand","도저히 견딜 수 없다"],["awful","형편없는"],["rehearsal","연습, 리허설"]]},{"id":47,"part":5,"en":"His band is called \"Loaded Diaper,\" only it's spelled \"Loded Diper\" on Rodrick's van.","ko":"밴드 이름이 '로디드 다이퍼'인데, 로드릭 차에 붙은 간판엔 'Loded Diper'라고 적혀 있어.","tip":"only it's ~는 '다만 ~하긴 한데'로 only를 접속사처럼 쓰는 구어. be spelled는 '철자가 ~로 적히다'.","words":[["only","다만, 그런데"],["be spelled","철자가 ~로 적히다"],["van","승합차, 밴"]]},{"id":48,"part":5,"en":"Dad was against the idea of Rodrick starting a band, but Mom was all for it.","ko":"아빠는 로드릭이 밴드를 한다는 것에 반대했는데, 엄마는 완전 찬성이었어.","tip":"be against는 '반대하다', be all for는 '전적으로 찬성하다'. 짝으로 외워 두면 바로 써먹을 수 있습니다.","words":[["be against","반대하다"],["be all for","전적으로 찬성하다"]]},{"id":49,"part":5,"en":"I don't think Mom really cares what Rodrick plays or listens to, because to her, all music is the same.","ko":"엄마는 로드릭이 뭘 연주하든 듣든 신경 안 쓰는 것 같아. 엄마한텐 모든 음악이 다 똑같거든.","tip":"care what ~는 '~에 대해 신경 쓰다'. I don't think ~는 '~인 것 같지 않다'로, 부정을 앞에 두는 영어식 화법입니다.","words":[["care","신경 쓰다"],["to her","그녀에게는"],["all the same","다 똑같은"]]},{"id":50,"part":5,"en":"Mom and Dad protect Manny like he's a prince or something, and he never gets in trouble, even if he really deserves it.","ko":"엄마 아빠는 매니를 왕자님 다루듯 하고, 걔는 혼나야 마땅한 짓을 해도 절대 혼나지 않아.","tip":"get in trouble은 '혼나다, 문제에 휘말리다'. deserve it은 '그럴 만하다'.","words":[["get in trouble","혼나다"],["deserve","~할 만하다"],["like he's a prince","왕자인 양"]]},{"id":51,"part":5,"en":"I could never get away with pulling any of that stuff on him.","ko":"내가 걔한테 그런 장난을 쳤다간 절대 못 넘어가.","tip":"get away with ~는 '(나쁜 짓을) 하고도 모면하다'. pull a prank은 '장난을 치다', pull stuff on someone은 '~에게 장난을 걸다'.","words":[["get away with","하고도 모면하다"],["pull a prank","장난을 치다"],["that stuff","그런 짓, 그런 것"]]},{"id":52,"part":6,"en":"The grown-ups in my neighborhood have been getting cranky about my lame costumes.","ko":"우리 동네 어른들이 내 변변찮은 코스튬 때문에 짜증을 내고 있어.","tip":"cranky는 '짜증이 난, 심술이 난'. lame은 '변변찮은, 시시한'으로 여기선 '초라한 분장'이라는 뜻입니다.","words":[["grown-ups","어른들"],["cranky","짜증이 난"],["lame","변변찮은, 시시한"]]},{"id":53,"part":6,"en":"But my trick kind of backfired, because as soon as Mom saw me, she made me go upstairs and take a shower.","ko":"그런데 내 계획이 좀 역효과가 났어. 엄마가 나를 보자마자 씻으러 올라가라고 하더라.","tip":"backfire는 '(계획이) 역효과를 내다'. as soon as는 '~하자마자'. kind of는 말투를 부드럽게 하는 '좀'.","words":[["backfire","역효과를 내다"],["as soon as","~하자마자"],["make someone do","~에게 ~하게 시키다"]]},{"id":54,"part":6,"en":"But I wasn't taking any chances.","ko":"그래도 난 위험은 안 졌어.","tip":"take a chance는 '위험을 감수하다'. not taking any chances는 '혹시 모를 일은 만들지 않겠다'는 뜻입니다.","words":[["take a chance","위험을 감수하다"],["any","조금이라도"]]},{"id":55,"part":6,"en":"Mom stepped in and bailed us out.","ko":"엄마가 나서서 우리를 빼 줬어.","tip":"step in은 '나서서 개입하다'. bail someone out은 '(곤경에서) 빼내다, 구해 주다'로 원래 보석금을 내주는 말입니다.","words":[["step in","나서다, 개입하다"],["bail someone out","곤경에서 빼내다"]]},{"id":56,"part":6,"en":"That's when we started getting cocky, making monkey noises at the teenagers and whatnot.","ko":"그때 우리가 좀 건방져져서, 십 대들한테 원숭이 소리를 내고 그랬지.","tip":"cocky는 '자만에 찬, 건방진'. and whatnot은 '~라든가 그런 것들'로 예를 몇 개만 들고 마무리할 때 씁니다.","words":[["cocky","건방진, 자만하는"],["and whatnot","~라든가 그런 것"],["teenager","십 대"]]},{"id":57,"part":6,"en":"I know she keeps a key under the mat on her front porch.","ko":"그 집 현관 매트 밑에 열쇠를 두는 걸 나는 알고 있었어.","tip":"keep a key under the mat은 '매트 밑에 열쇠를 숨겨 두다'로 미국 주택가 단골 소재. porch는 현관, 마루입니다.","words":[["keep a key under the mat","매트 밑에 열쇠를 두다"],["porch","현관, 마루"]]},{"id":58,"part":6,"en":"I called Mom to tell her we were going to crash at Gramma's for the night.","ko":"오늘 밤은 할머니 댁에서 자겠다고 엄마한테 전화했어.","tip":"crash at ~는 '(남의 집에서) 그냥 자고 가다'. for the night는 '하룻밤'.","words":[["crash at","~에서 자고 가다"],["for the night","하룻밤 동안"]]},{"id":59,"part":7,"en":"Those guys were charging five bucks a pop and the line stretched halfway around the school.","ko":"걔네는 한 명당 5달러씩 받는데 줄이 학교 절반을 돌 정도였어.","tip":"a pop은 '한 개당, 한 명당'이라는 구어체. stretch는 '늘어서다, 길게 이어지다'.","words":[["a pop","한 명당, 하나에"],["charge","요금을 받다"],["stretch","길게 늘어서다"]]},{"id":60,"part":7,"en":"By the time we finished putting the flyers up around the neighborhood and got back to Rowley's basement, it was already 2:30 and we hadn't even started putting the actual haunted house together yet.","ko":"동네에 전단지를 다 붙이고 로울리 집 지하로 돌아왔을 땐 벌써 2시 30분이었고, 정작 유령의 집은 손도 못 댄 상태였어.","tip":"by the time은 '~할 때쯤엔'으로 뒤에 완료 시제가 자주 옵니다. put together는 '조립하다, 갖추다'.","words":[["by the time","~할 때쯤엔"],["flyer","전단지"],["put together","조립하다, 갖추다"]]},{"id":61,"part":7,"en":"So we had to cut some corners from our original plan.","ko":"그래서 원래 계획에서 몇 가지는 대충 넘어가야 했어.","tip":"cut corners는 '절차를 생략하다, 대충 하다'로, 시간이나 돈을 아끼려고 요령을 피울 때 씁니다.","words":[["cut corners","대충 하다, 절차를 생략하다"],["original plan","원래 계획"]]},{"id":62,"part":7,"en":"I could see that we had a chance to make a killing here. So I told the kids that admission was two bucks.","ko":"이거 크게 벌 기회다 싶었어. 그래서 애들한테 입장료가 2달러라고 했지.","tip":"make a killing은 '한몫 크게 챙기다, 대박을 내다'. admission은 '입장, 입장료'.","words":[["make a killing","큰돈을 벌다"],["admission","입장료"],["buck","달러(구어)"]]},{"id":63,"part":7,"en":"The first kid to cough up his two bucks was Shane Snella.","ko":"제일 먼저 2달러를 억지로 내놓은 애는 셰인 스넬라였어.","tip":"cough up은 '(마지못해 돈을) 털어놓다'로, 내기 싫은 돈을 결국 내는 뉘앙스입니다.","words":[["cough up","마지못해 돈을 내놓다"],["the first to ~","~한 첫 번째 사람"]]},{"id":64,"part":7,"en":"Shane curled up in a ball underneath the bed, and he wouldn't budge.","ko":"셰인은 침대 밑에서 공처럼 몸을 말고 꼼짝도 안 했어.","tip":"curl up in a ball은 '공처럼 몸을 웅크리다'. not budge는 '꼼짝도 않다'.","words":[["curl up in a ball","공처럼 웅크리다"],["underneath","~밑에"],["not budge","꼼짝도 않다"]]},{"id":65,"part":7,"en":"We really were running a legitimate operation, and the fifty-cent thing was just a typo.","ko":"우리는 제대로 된 장사를 하고 있었어. 50센트라고 적힌 건 그냥 오타였고.","tip":"run an operation은 '사업을 운영하다, 작전을 돌리다'. typo는 '오타'입니다.","words":[["run an operation","사업을 운영하다"],["legitimate","제대로 된, 합법적인"],["typo","오타"]]},{"id":66,"part":8,"en":"I really couldn't help doing what I did next.","ko":"그다음에 한 일은 정말 어쩔 수가 없었어.","tip":"can't help ~ing는 '~하지 않을 수 없다'. 참으려 해도 안 되는 상황을 변명할 때 씁니다.","words":[["can't help ~ing","~하지 않을 수 없다"],["what I did next","그다음에 내가 한 일"]]},{"id":67,"part":8,"en":"The snowball had got so heavy that it tore up all the turf Dad had just laid down last autumn.","ko":"눈덩이가 너무 무거워져서, 아빠가 지난가을에 막 깔아 둔 잔디를 다 망쳐 놨어.","tip":"tear up은 '갈기갈기 찢다, 망가뜨리다'. turf는 '잔디, 땅'. lay down turf는 '잔디를 깔다'.","words":[["tear up","망가뜨리다, 찢다"],["turf","잔디, 땅"],["lay down","깔다"]]},{"id":68,"part":8,"en":"I watched Manny trying to build a snowman out of the piddly crumbs of snow that were left over from our snowball.","ko":"우리 눈덩이 만들고 남은 자그마한 눈 부스러기로 눈사람을 만들려는 매니를 지켜봤어.","tip":"piddly는 '하찮은, 조금밖에 안 되는'. left over는 '남은'. out of ~는 '~으로(재료)'.","words":[["piddly","하찮은, 조금밖에 안 되는"],["crumbs","부스러기"],["left over","남은"]]},{"id":69,"part":8,"en":"We have to wear these things called \"singlets,\" which look like those bathing suits.","ko":"우린 '싱글릿'이라는 걸 입어야 하는데, 수영복처럼 생겼어.","tip":"singlet은 레슬링 선수가 입는 민소매 유니폼. look like ~는 '~처럼 보이다'.","words":[["singlet","레슬링 유니폼"],["look like","~처럼 보이다"],["bathing suit","수영복"]]},{"id":70,"part":8,"en":"I would have traded for Benny Wells in a heartbeat.","ko":"벤 웰스랑 바꿀 수 있다면 망설임 없이 바꿨을 거야.","tip":"in a heartbeat는 '생각할 것도 없이 바로'. would have p.p.는 '~했을 텐데'라는 가정입니다.","words":[["in a heartbeat","망설임 없이 바로"],["trade for","~와 맞바꾸다"],["would have p.p.","~했을 텐데"]]},{"id":71,"part":8,"en":"He pinned me over every which way you could imagine.","ko":"걔는 상상할 수 있는 모든 방식으로 나를 눌러 버렸어.","tip":"pin은 '(레슬링에서) 눌러 꼼짝 못 하게 하다'. every which way는 '사방으로, 온갖 방향으로'.","words":[["pin","눌러 꼼짝 못 하게 하다"],["every which way","온갖 방향으로"]]},{"id":72,"part":8,"en":"You can't walk five feet without tripping over a couple of kids going at it.","ko":"몇 걸음만 걸어도 애들 둘이 붙어 있는 걸 밟고 넘어질 판이야.","tip":"trip over ~는 '~에 걸려 넘어지다'. go at it은 '서로 덤비다, 붙어 있다'.","words":[["trip over","~에 걸려 넘어지다"],["a couple of","두어 명의"],["go at it","서로 덤비다"]]},{"id":73,"part":9,"en":"I could feel about 300 pairs of eyeballs pointed my way.","ko":"삼백 쌍쯤 되는 눈알이 나를 향하는 게 느껴졌어.","tip":"pairs of eyeballs는 '눈알 몇 쌍'으로, 쏟아지는 시선을 과장해 표현한 말. pointed my way는 '나를 향한'.","words":[["pairs of eyeballs","눈알 몇 쌍"],["pointed my way","나를 향한"]]},{"id":74,"part":9,"en":"I was able to deflect the embarrassment over to Archie Kelly.","ko":"나는 창피한 걸 아치 켈리 쪽으로 잘 넘길 수 있었어.","tip":"deflect는 '방향을 돌리다, 튕겨 내다'로, 여기선 '망신을 남에게 미루다'.","words":[["deflect","방향을 돌리다"],["embarrassment","창피, 망신"]]},{"id":75,"part":9,"en":"The only thing that tipped me off that Christmas was coming was when Rodrick put his wish list up on the refrigerator.","ko":"크리스마스가 다가오는 걸 알게 된 건, 로드릭이 냉장고에 갖고 싶은 것 목록을 붙였을 때뿐이야.","tip":"tip someone off는 '~에게 귀띔하다, 알게 하다'. a wish list는 '갖고 싶은 것 목록'.","words":[["tip off","귀띔하다, 알려 주다"],["wish list","갖고 싶은 것 목록"],["refrigerator","냉장고"]]},{"id":76,"part":9,"en":"I kind of decided to throw in the towel for this Christmas and I headed up to Rowley's house.","ko":"이번 크리스마스는 그냥 포기하기로 하고 로울리네 집으로 가 버렸어.","tip":"throw in the towel은 '포기하다'로, 권투에서 타월을 던져 기권하는 데서 온 말입니다.","words":[["throw in the towel","포기하다"],["head up to","~로 향하다"]]},{"id":77,"part":9,"en":"I decided the right thing to do was to just let Rowley take one for the team this time around.","ko":"이번엔 로울리가 총대를 메는 게 옳은 일이라고 정했어.","tip":"take one for the team은 '팀을 위해 손해를 감수하다, 총대를 메다'. this time around는 '이번에는'.","words":[["take one for the team","총대를 메다"],["the right thing to do","옳은 일"]]},{"id":78,"part":9,"en":"I can't believe Rowley went and backstabbed me like that.","ko":"로울리가 나한테 그렇게 뒤통수를 치다니 믿을 수가 없어.","tip":"go and ~는 '~해 버리다'로 못마땅함을 담습니다. backstab은 '뒤통수를 치다, 배신하다'.","words":[["go and ~","~해 버리다"],["backstab","뒤통수를 치다"],["like that","그렇게까지"]]},{"id":79,"part":9,"en":"I said I was sick of it being on the blacktop, and I just decided to get rid of it once and for all.","ko":"그 치즈가 운동장에 계속 있는 게 지긋지긋해서, 이참에 아예 없애 버리기로 했다고 말했어.","tip":"be sick of ~는 '~에 질리다'. once and for all은 '이번에 완전히, 최종적으로'.","words":[["be sick of","~에 질리다"],["get rid of","없애다, 치우다"],["once and for all","이번에 완전히"]]},{"id":80,"part":9,"en":"All she said was that I should try to do the right thing, because it's our choices that make us who we are.","ko":"엄마는 그저 옳은 일을 하라고 했어. 우리를 우리로 만드는 건 우리가 하는 선택이니까.","tip":"it's ~ that 강조 구문으로 '~인 것은 바로 …'. make us who we are는 '우리를 지금의 우리로 만들다'.","words":[["it's ~ that","바로 ~인 것은"],["do the right thing","옳은 일을 하다"],["make us who we are","우리를 우리답게 만들다"]]},{"id":81,"part":9,"en":"But if he ever gets too big for his britches, I'll just remind him that he was the guy who ate the cheese.","ko":"그래도 걔가 나중에 건방져지면, 치즈 먹은 게 바로 자기라는 걸 한 번 일러 주면 돼.","tip":"get too big for one's britches는 '주제넘게 굴다, 건방져지다'. britches는 '바지'의 옛말·구어입니다.","words":[["get too big for one's britches","건방져지다, 주제넘게 굴다"],["remind","일러 주다, 상기시키다"]]}];
+const KEYS = {ko:'wk.ko', speed:'wk.speed', done:'wk.done'};
+const PARTS = [[1, "일기장과 중학교 첫날"], [2, "학교에서 살아남기"], [3, "친구 로울리"], [4, "치즈 터치"], [5, "가족: 로드릭과 매니"], [6, "할로윈"], [7, "유령의 집 사업"], [8, "겨울: 눈싸움과 레슬링"], [9, "연극·크리스마스·마무리"]];
+const $ = s => document.querySelector(s);
+const list = $('#list');
+const au = $('#au');
+
+let state = {
+  part: 0,
+  q: '',
+  ko: localStorage.getItem(KEYS.ko) !== '0',
+  speed: parseFloat(localStorage.getItem(KEYS.speed) || '1'),
+  done: new Set(JSON.parse(localStorage.getItem(KEYS.done) || '[]')),
+  queue: [], qi: -1, playing: false, currentId: null
+};
+
+function saveDone(){ localStorage.setItem(KEYS.done, JSON.stringify([...state.done])); }
+function fmt(n){ return String(n).padStart(2,'0'); }
+function pad3(n){ return String(n).padStart(3,'0'); }
+function esc(s){ return s.replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
+
+function partName(p){ const f = PARTS.find(x => x[0] === p); return f ? f[1] : ''; }
+
+function matches(it){
+  if (state.part && it.part !== state.part) return false;
+  const q = state.q.trim().toLowerCase();
+  if (!q) return true;
+  const hay = [it.en, it.ko, it.tip, ...it.words.flat()].join(' ').toLowerCase();
+  return hay.includes(q);
+}
+
+function highlight(text, q){
+  const e = esc(text);
+  if (!q) return e;
+  try{
+    const re = new RegExp('(' + q.replace(/[.*+?^${}()|[\]\\]/g,'\\$&') + ')', 'ig');
+    return e.replace(re, '<mark>$1</mark>');
+  }catch(err){ return e; }
+}
+
+function renderParts(){
+  const box = $('#parts');
+  box.innerHTML = '';
+  const mk = (val, label) => {
+    const b = document.createElement('button');
+    b.className = 'pbtn' + (state.part === val ? ' on' : '');
+    b.textContent = label;
+    b.onclick = () => { state.part = val; renderParts(); render(); };
+    box.appendChild(b);
+  };
+  mk(0, `전체 ${DATA.length}`);
+  PARTS.forEach(([p, name]) => mk(p, `${p}. ${name}`));
+}
+
+function renderLegends(){
+  const shown = DATA.filter(matches);
+  const doneN = DATA.filter(d => state.done.has(d.id)).length;
+  $('#stat').textContent = `${doneN} / ${DATA.length} 완료`;
+  $('#doneFill').style.width = (doneN / DATA.length * 100) + '%';
+  $('#legend').textContent = `문장 ${shown.length}개 표시` + (state.part ? ` · ${partName(state.part)}` : ' · 전체 파트');
+  $('#btnCont').textContent = state.part ? '▶ 이 파트 연속 듣기' : '▶ 전체 연속 듣기';
+}
+
+function render(){
+  const items = DATA.filter(matches);
+  list.innerHTML = '';
+  if (!items.length){
+    list.innerHTML = '<p class="empty">검색 결과가 없어요.<br>다른 단어로 찾아보세요.</p>';
+    renderLegends();
+    return;
+  }
+  let lastPart = 0;
+  const q = state.q.trim();
+  items.forEach(it => {
+    if (it.part !== lastPart){
+      lastPart = it.part;
+      const h = document.createElement('div');
+      h.className = 'legend';
+      h.style.cssText = 'font-size:11.5px;font-weight:700;color:var(--sub2);padding:12px 2px 6px;letter-spacing:.2px';
+      h.textContent = `PART ${it.part} · ${partName(it.part)}`;
+      list.appendChild(h);
+    }
+    const el = document.createElement('article');
+    el.className = 'card' + (state.done.has(it.id) ? ' done' : '');
+    el.dataset.id = it.id;
+    el.innerHTML = `
+      <div class="chead">
+        <span class="num${state.done.has(it.id) ? ' part' : ''}">${fmt(it.id)}</span>
+        <button class="chk${state.done.has(it.id) ? ' on' : ''}" data-act="done" aria-label="학습 완료 표시">✓</button>
+      </div>
+      <p class="en">${highlight(it.en, q)}</p>
+      <p class="ko">${highlight(it.ko, q)}</p>
+      <div class="chips">${it.words.map(w => `<button class="chip" data-act="chip">${esc(w[0])}</button>`).join('')}</div>
+      <div class="actions">
+        <button class="btn play" data-act="play">▶ 듣기</button>
+        <button class="btn" data-act="ko">🇰🇷 해석</button>
+        <button class="btn" data-act="tip">💡 해설</button>
+      </div>
+      <div class="detail">
+        <p class="tip">${highlight(it.tip, q)}</p>
+        <ul class="words">${it.words.map(w => `<li><b>${esc(w[0])}</b><span>${esc(w[1])}</span></li>`).join('')}</ul>
+      </div>`;
+    el.querySelector('[data-act=play]').onclick = () => { playFrom(it.id); };
+    el.querySelector('[data-act=done]').onclick = () => toggleDone(it);
+    el.querySelector('[data-act=ko]').onclick = (e) => {
+      const b = e.currentTarget;
+      if (document.body.classList.contains('ko-off')){
+        const on = el.classList.toggle('ko-open');
+        b.classList.toggle('on', on);
+      } else {
+        const hidden = el.classList.toggle('ko-hide');
+        b.classList.toggle('on', hidden);
+        b.textContent = hidden ? '🇰🇷 해석 보기' : '🇰🇷 해석';
+      }
+    };
+    el.querySelector('[data-act=tip]').onclick = (e) => {
+      const on = el.classList.toggle('open');
+      e.currentTarget.classList.toggle('on', on);
+    };
+    el.querySelectorAll('[data-act=chip]').forEach(b => b.onclick = () => {
+      el.classList.add('open');
+      el.querySelector('[data-act=tip]').classList.add('on');
+    });
+    list.appendChild(el);
+  });
+  renderLegends();
+}
+
+function toggleDone(it){
+  if (state.done.has(it.id)) state.done.delete(it.id); else state.done.add(it.id);
+  saveDone();
+  const el = list.querySelector(`[data-id="${it.id}"]`);
+  if (el){
+    el.classList.toggle('done', state.done.has(it.id));
+    el.querySelector('.chk').classList.toggle('on', state.done.has(it.id));
+    el.querySelector('.num').classList.toggle('part', state.done.has(it.id));
+  }
+  renderLegends();
+}
+
+function toast(msg){
+  const t = $('#toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  clearTimeout(t._h);
+  t._h = setTimeout(() => t.classList.remove('show'), 1800);
+}
+
+function visibleItems(){ return DATA.filter(matches); }
+
+function playAt(i){
+  state.qi = i;
+  const it = state.queue[i];
+  if (!it) return;
+  state.currentId = it.id;
+  au.src = `audio/${pad3(it.id)}.mp3`;
+  au.playbackRate = state.speed;
+  au.play().catch(() => speakFallback(it));
+  updateNow();
+  document.querySelectorAll('.card.playing').forEach(c => c.classList.remove('playing'));
+  const el = list.querySelector(`[data-id="${it.id}"]`);
+  if (el){
+    el.classList.add('playing');
+    el.scrollIntoView({ block: 'center', behavior: 'smooth' });
+  }
+}
+
+function speakFallback(it){
+  if (!('speechSynthesis' in window)) { toast('음성을 재생할 수 없어요'); return; }
+  speechSynthesis.cancel();
+  const u = new SpeechSynthesisUtterance(it.en);
+  u.lang = 'en-US';
+  u.rate = state.speed;
+  u.onend = () => onEnded();
+  speechSynthesis.speak(u);
+}
+
+function playFrom(id){
+  const vis = visibleItems();
+  state.queue = vis;
+  const idx = vis.findIndex(x => x.id === id);
+  playAt(idx < 0 ? 0 : idx);
+}
+
+function playAll(){
+  state.queue = visibleItems();
+  if (!state.queue.length) { toast('재생할 문장이 없어요'); return; }
+  playAt(0);
+  toast(state.part ? `${partName(state.part)} 연속 듣기` : '전체 연속 듣기');
+}
+
+function onEnded(){
+  if (state.qi + 1 < state.queue.length) playAt(state.qi + 1);
+  else stopPlay(true);
+}
+
+function stopPlay(finished){
+  au.pause();
+  if ('speechSynthesis' in window) speechSynthesis.cancel();
+  state.playing = false;
+  $('#btnPlay').textContent = '▶';
+  $('#afill').style.width = '0%';
+  document.querySelectorAll('.card.playing').forEach(c => c.classList.remove('playing'));
+  if (finished){
+    $('#nowLbl').textContent = '마지막 문장까지 들었어요 · 다시 들으려면 ▶';
+    state.qi = -1;
+  }
+}
+
+function updateNow(){
+  const it = DATA.find(x => x.id === state.currentId);
+  if (!it) return;
+  const i = state.qi + 1, n = state.queue.length;
+  $('#nowLbl').innerHTML = `<b>${fmt(it.id)}</b> ${n > 1 ? `${i}/${n} · ` : ''}${esc(it.en.slice(0, 34))}${it.en.length > 34 ? '…' : ''}`;
+}
+
+au.addEventListener('play', () => { state.playing = true; $('#btnPlay').textContent = '❚❚'; });
+au.addEventListener('pause', () => { if (!au.ended) { state.playing = false; $('#btnPlay').textContent = '▶'; } });
+au.addEventListener('ended', onEnded);
+au.addEventListener('error', () => {
+  const it = DATA.find(x => x.id === state.currentId);
+  if (it) speakFallback(it);
+});
+au.addEventListener('timeupdate', () => {
+  if (au.duration) $('#afill').style.width = (au.currentTime / au.duration * 100) + '%';
+});
+
+$('#btnCont').onclick = () => playAll();
+$('#btnPlay').onclick = () => {
+  if (state.playing && !au.paused){ au.pause(); return; }
+  if (au.src && state.currentId && au.currentTime > 0 && au.paused && !au.ended){ au.play(); return; }
+  if (state.qi >= 0 && state.queue.length){ playAt(state.qi); return; }
+  playAll();
+};
+$('#btnNext').onclick = () => {
+  if (!state.queue.length) { playAll(); return; }
+  if (state.qi + 1 < state.queue.length) playAt(state.qi + 1);
+  else toast('마지막 문장이에요');
+};
+$('#btnPrev').onclick = () => {
+  if (!state.queue.length) { toast('먼저 재생을 시작해 주세요'); return; }
+  if (au.currentTime > 3){ au.currentTime = 0; return; }
+  playAt(Math.max(0, state.qi - 1));
+};
+
+$('#koAll').onclick = (e) => {
+  state.ko = !state.ko;
+  localStorage.setItem(KEYS.ko, state.ko ? '1' : '0');
+  document.body.classList.toggle('ko-off', !state.ko);
+  e.currentTarget.classList.toggle('on', state.ko);
+  e.currentTarget.textContent = state.ko ? '🇰🇷 한글 해석 ON' : '🇰🇷 한글 해석 OFF';
+  if (state.ko){
+    document.querySelectorAll('.card.ko-open').forEach(c => c.classList.remove('ko-open'));
+    document.querySelectorAll('.card.ko-hide').forEach(c => {
+      c.classList.remove('ko-hide');
+      const b = c.querySelector('[data-act=ko]');
+      if (b){ b.classList.remove('on'); b.textContent = '🇰🇷 해석'; }
+    });
+  }
+};
+
+$('#speed').addEventListener('click', (e) => {
+  const b = e.target.closest('button[data-r]');
+  if (!b) return;
+  state.speed = parseFloat(b.dataset.r);
+  localStorage.setItem(KEYS.speed, state.speed);
+  au.playbackRate = state.speed;
+  document.querySelectorAll('#speed button').forEach(x => x.classList.toggle('on', x === b));
+  toast(`속도 ${state.speed}x`);
+});
+
+let tq;
+$('#q').addEventListener('input', (e) => {
+  clearTimeout(tq);
+  tq = setTimeout(() => { state.q = e.target.value; render(); }, 120);
+});
+
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape'){ $('#q').value = ''; state.q = ''; render(); $('#q').blur(); }
+});
+
+// init
+document.body.classList.toggle('ko-off', !state.ko);
+const koBtn = $('#koAll');
+koBtn.classList.toggle('on', state.ko);
+koBtn.textContent = state.ko ? '🇰🇷 한글 해석 ON' : '🇰🇷 한글 해석 OFF';
+document.querySelectorAll('#speed button').forEach(b => b.classList.toggle('on', parseFloat(b.dataset.r) === state.speed));
+renderParts();
+render();
+</script>
+</body>
+</html>

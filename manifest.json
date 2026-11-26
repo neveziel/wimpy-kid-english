@@ -1,0 +1,22 @@
+{
+ "name": "윔피키드 영어 한 문장",
+ "short_name": "윔피키드",
+ "description": "Diary of a Wimpy Kid 1권 핵심 표현 81개 — 원어민 음성·한국어 해석·구동사 해설",
+ "start_url": "./index.html",
+ "display": "standalone",
+ "background_color": "#0f1419",
+ "theme_color": "#0f1419",
+ "orientation": "portrait",
+ "icons": [
+  {
+   "src": "icon-180.png",
+   "sizes": "180x180",
+   "type": "image/png"
+  },
+  {
+   "src": "icon-512.png",
+   "sizes": "512x512",
+   "type": "image/png"
+  }
+ ]
+}
